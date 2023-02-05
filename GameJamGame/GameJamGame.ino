@@ -29,13 +29,13 @@ Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(32, 8, PIN,
   NEO_GRB            + NEO_KHZ800);
 
 const uint16_t colors[] = {
-  matrix.Color(0, 0, 0), matrix.Color(255, 255, 0), matrix.Color(0, 0, 255), matrix.Color(255, 255, 0), matrix.Color(0, 255, 0), matrix.Color(255, 0, 0), matrix.Color(255, 128, 0)};
+  matrix.Color(0, 0, 0), matrix.Color(255, 255, 0), matrix.Color(0, 0, 255), matrix.Color(255, 255, 0), matrix.Color(0, 255, 0), matrix.Color(255, 0, 0), matrix.Color(255, 128, 0), matrix.Color(255, 51, 255)};
 
 uint16_t mapColor[8][32] = {
   {colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2], colors[2]},
   {colors[2], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[2]},
   {colors[2], colors[2], colors[2], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[2]},
-  {colors[6], colors[0], colors[0], colors[5], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[4], colors[0], colors[2]},
+  {colors[6], colors[0], colors[0], colors[0], colors[5], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[4], colors[0], colors[2]},
   {colors[6], colors[0], colors[2], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[2]},
   {colors[2], colors[2], colors[2], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[2]},
   {colors[2], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[0], colors[2]},
@@ -53,6 +53,16 @@ uint16_t level1[8][32] = {
   {matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), matrix.Color(0, 0, 255), },
 };
 
+uint16_t finalLoc[8][32] = {
+{matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), },
+{matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(127.8804, 85.76006, 8.742427), matrix.Color(127.8804, 85.76006, 8.742427), matrix.Color(255, 51, 255), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), },
+{matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(127.8804, 85.76006, 8.742427), matrix.Color(127.8804, 85.76006, 8.742427), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), },
+{matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(127.8804, 85.76006, 8.742427), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), },
+{matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), },
+{matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 171.489, 0), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 255, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), },
+{matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(121.7392, 81.29609, 7.345317), matrix.Color(0, 171.489, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), },
+{matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), matrix.Color(0, 0, 0), },
+};
 
 int walls[8][32] = {
   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -229,8 +239,13 @@ char defChar = '`';
 String text = "";
 
 int replicaCount = 0;
-const String firstNPCtext[] = {"Hello!", "I'm here", "To find", "My roots", "Oh!", "Are you", "John69?"};
-const uint16_t firstNPCcolor[] = {colors[1], colors[1], colors[1], colors[1], colors[4], colors[4], colors[4]};
+int replicaNumber = 0;
+const String firstNPCtext[] = {"Hello!", "I'm here", "to find", "my", "roots", "Oh!", "I know", "you!", "son", "of the", "kings!", "You", "have", "to go", "futher", "in the", "forest", "Thanks!", "Good", "Luck!"};
+const uint16_t firstNPCcolor[] = {colors[1], colors[1], colors[1], colors[1], colors[1], colors[4], colors[4], colors[4], colors[4], colors[4], colors[4], colors[4], colors[4], colors[4], colors[4], colors[4], colors[4], colors[1], colors[4], colors[4]};
+
+const String finalNPCtext[] = {"Here's", "the", "tree", "which", "belongs", "to your", "family", "take a", "moment", "I will."};
+const uint16_t finalNPCcolor[] = {colors[4], colors[4], colors[4], colors[4], colors[4], colors[4], colors[4], colors[4], colors[4], colors[1]};
+
 
 int enemyPosition[] = {0, 0};
 int playerWeapon = 0;
@@ -369,6 +384,8 @@ void DrawLevel(){
         walls[j][i] = 3;
       else if(currentMap[j][i] == colors[6])
         walls[j][i] = 4;
+      else if(currentMap[j][i] == colors[7])
+        walls[j][i] = 5;
       else if(currentMap[j][i] == colors[0])
         walls[j][i] = 0;
       else
@@ -388,7 +405,7 @@ void DrawLevel(){
 // }
 
 void playRootAnim(){
-  int wai = 1000;
+  int wai = 1500;
   for(int i = 0; i < matrix.width(); i++){
     for(int j = 0; j < matrix.height(); j++){
         matrix.drawPixel(i, j, rootFrame1[j][i]);
@@ -451,7 +468,31 @@ void playRootAnim(){
   matrix.setTextWrap(true);
   matrix.fillScreen(0);
   matrix.setCursor(0, yTextOffset);
-  matrix.print("You!!!");
+  matrix.print("You");
+  matrix.show();
+  delay(wai);
+  matrix.setRotation(90);
+  matrix.clear();
+  matrix.setTextWrap(true);
+  matrix.fillScreen(0);
+  matrix.setCursor(0, yTextOffset);
+  matrix.print("for");
+  matrix.show();
+  delay(wai);
+  matrix.setRotation(90);
+  matrix.clear();
+  matrix.setTextWrap(true);
+  matrix.fillScreen(0);
+  matrix.setCursor(0, yTextOffset);
+  matrix.print("playing");
+  matrix.show();
+  delay(wai);
+  matrix.setRotation(90);
+  matrix.clear();
+  matrix.setTextWrap(true);
+  matrix.fillScreen(0);
+  matrix.setCursor(0, yTextOffset);
+  matrix.print("<3");
   matrix.show();
 }
 
@@ -467,7 +508,11 @@ void MovePlayer() {
       matrix.drawPixel(playerPosition[0], playerPosition[1], colors[1]);
       matrix.show();
     } else if(walls[playerPosition[1] + yDirection][playerPosition[0] + xDirection] == 2){ 
-      ContinueReplica();
+      replicaCount = 0;
+      if(replicaNumber == 0)
+        ContinueReplica();
+      else if(replicaNumber == 1)
+        ContinueReplicaFinal();
       SerialBT.println("medium");
     } else if(walls[playerPosition[1] + yDirection][playerPosition[0] + xDirection] == 3){ 
       SerialBT.println("high");
@@ -483,7 +528,9 @@ void MovePlayer() {
       ChangeLevel();
       DrawLevel();
       matrix.show();
-    }
+    } else if(walls[playerPosition[1] + yDirection][playerPosition[0] + xDirection] == 5){ 
+      playRootAnim();
+    } 
     
     SerialBT.flush();
 }
@@ -503,11 +550,19 @@ void ChangeLevel(){
       }
     }
   }
+  if(levelNumber == 2){
+    for(int i = 0; i < matrix.width(); i++){
+      for(int j = 0; j < matrix.height(); j++){
+        currentMap[j][i] = finalLoc[j][i];
+      }
+    }
+  }
   
 }
 
 void ContinueReplica(){
-  if(replicaCount < 7){
+  
+  if(replicaCount < 20){
     matrix.setRotation(90);
     matrix.setTextWrap(true);
     matrix.fillScreen(0);
@@ -515,6 +570,7 @@ void ContinueReplica(){
     matrix.clear();
     matrix.setTextColor(firstNPCcolor[replicaCount]);
     matrix.print(firstNPCtext[replicaCount]);
+    
     replicaCount++;
     matrix.show();
   } else {
@@ -525,7 +581,36 @@ void ContinueReplica(){
     matrix.setCursor(0, yTextOffset);
     matrix.clear();
     replicaCount = 0;
-    
+    replicaNumber++;
+    DrawLevel();
+    matrix.drawPixel(playerPosition[0], playerPosition[1], colors[1]);
+    matrix.show();
+  }
+  
+  SerialBT.flush();
+}
+
+void ContinueReplicaFinal(){
+  
+  if(replicaCount < 10){
+    matrix.setRotation(90);
+    matrix.setTextWrap(true);
+    matrix.fillScreen(0);
+    matrix.setCursor(0, yTextOffset);
+    matrix.clear();
+    matrix.setTextColor(finalNPCcolor[replicaCount]);
+    matrix.print(finalNPCtext[replicaCount]);
+    replicaCount++;
+    matrix.show();
+  } else {
+    SerialBT.println("low");
+    matrix.setRotation(0);
+    matrix.setTextWrap(false);
+    matrix.fillScreen(0);
+    matrix.setCursor(0, yTextOffset);
+    matrix.clear();
+    replicaCount = 0;
+    replicaNumber++;
     DrawLevel();
     matrix.drawPixel(playerPosition[0], playerPosition[1], colors[1]);
     matrix.show();
@@ -632,7 +717,12 @@ void loop() {
   if(command == "stc") SetTextColor();
   if(command == "pw") PickWeapon();
   if(command == "mp") MovePlayer();
-  if(command == "cr") ContinueReplica(); 
+  if(command == "cr") {
+    if(replicaNumber == 0)
+        ContinueReplica();
+    else if(replicaNumber == 1)
+        ContinueReplicaFinal();
+  }
   if(command == "ae") AttackEnemy();
 
   //matrix.drawRGBBitmap(0, 0, "/Level1.bmp", 32, 8);
